@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+</head>
+<body>
+    <div class="container">
+        <!-- Page Heading -->
+        <div class="heading">
+            <h1>Analysis</h1>
+        </div> 
+
+        <!-- Distribution of Rent -->
+        <h2>Distribution of Rent</h2>
+        <img src="{{ url_for('static', filename='images/rent_distribution.png') }}" alt="Rent Distribution">
+
+        <!-- Correlation Heatmap -->
+        <h2>Correlation Heatmap</h2>
+        <img src="{{ url_for('static', filename='images/correlation_heatmap.png') }}" alt="Correlation Heatmap">
+
+        <!-- Feature Importances -->
+        <h2>Feature Importances</h2>
+        <img src="{{ url_for('static', filename='images/feature_importances.png') }}" alt="Feature Importances">
+
+        <!-- Actual vs Predicted Rent -->
+        <h2>Actual vs Predicted Rent</h2>
+        <img src="{{ url_for('static', filename='images/actual_vs_predicted_rent.png') }}" alt="Actual vs Predicted Rent">
+
+        <!-- Residuals Distribution -->
+        <h2>Residuals Distribution</h2>
+        <img src="{{ url_for('static', filename='images/residuals_distribution.png') }}" alt="Residuals Distribution">
+
+        <!-- Predicted vs Actual Rent Comparison -->
+        <h2>Predicted vs Actual Rent Comparison</h2>
+        <img src="{{ url_for('static', filename='images/predicted_vs_actual_rent_comparison.png') }}" alt="Predicted vs Actual Rent Comparison">
+
+        <!-- Navigation Button to Home -->
+        <div class="nav-container">
+            <a class="nav" href="{{ url_for('index') }}">Home</a>
+        </div>
+    </div>
+</body>
+</html>

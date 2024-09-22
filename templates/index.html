@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Bangalore Rent Prediction</h1>
+        </div>
+        
+        <form id="predictionForm">
+            <label for="bhk">BHK:</label>
+            <input type="number" id="bhk" name="bhk" required placeholder="Enter BHK">
+
+            <label for="size">Size (sqft):</label>
+            <input type="number" id="size" name="size" required placeholder="Enter size in sqft">
+
+            <label for="floor">Floor:</label>
+            <input type="number" id="floor" name="floor" required placeholder="Enter floor number">
+
+            <label for="area_type">Area Type:</label>
+            <select id="area_type" name="area_type" required>
+                <option value="" disabled selected>Select Area Type</option>
+                <option value="Super Area">Super Area</option>
+                <option value="Carpet Area">Carpet Area</option>
+            </select>
+
+            <label for="furnishing_status">Furnishing Status:</label>
+            <select id="furnishing_status" name="furnishing_status" required>
+                <option value="" disabled selected>Select Furnishing Status</option>
+                <option value="Furnished">Furnished</option>
+                <option value="Semi-Furnished">Semi-Furnished</option>
+                <option value="Unfurnished">Unfurnished</option>
+            </select>
+
+            <label for="tenant_preferred">Tenant Preferred:</label>
+            <select id="tenant_preferred" name="tenant_preferred" required>
+                <option value="" disabled selected>Select Tenant Preference</option>
+                <option value="Bachelors">Bachelors</option>
+                <option value="Family">Family</option>
+                <option value="Bachelors/Family">Bachelors/Family</option>
+            </select>
+
+            <label for="bathroom">Bathroom:</label>
+            <input type="number" id="bathroom" name="bathroom" required placeholder="Enter number of bathrooms">
+
+            <label for="point_of_contact">Point of Contact:</label>
+            <select id="point_of_contact" name="point_of_contact" required>
+                <option value="" disabled selected>Select Point of Contact</option>
+                <option value="Contact Owner">Contact Owner</option>
+                <option value="Contact Agent">Contact Agent</option>
+            </select>
+
+            <div class="button-container">
+                <button class="button" type="submit">Predict Rent</button>
+                <button class="button" type="reset" id="resetButton">Reset</button>
+            </div>
+
+            <!-- Predicted Rent Box -->
+            <div class="prediction-box">
+                <h2>Predicted Rent</h2>
+                <p>₹<span id="rent-value">0.00</span></p>
+            </div>  
+        </form>
+
+        <div class="nav-container">
+            <a class="nav" href="{{ url_for('analysis') }}">Go to Analysis</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    background-color: #000000; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    background: #1F1F1F; 
+    border: solid #8BC34A;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.heading {
+    border: solid #8BC34A; 
+    padding: 1px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    font-family: cursive;
+    text-align: center;
+    color: #FFFFFF; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, select {
+    color: #E0E0E0; 
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+input, select {
+    border: 2px solid #8BC34A; 
+    background-color: #2C2C2C; 
+    color: #FFFFFF; 
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    font-family: cursive;
+    font-weight: bold;
+    padding: 10px;
+    width: 50%;
+    background-color: #3F51B5; 
+    border: 1px solid #8BC34A; 
+    border-radius: 4px;
+    color: #FFFFFF; 
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #2C3E9A; 
+}
+
+.nav-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    text-decoration: none;
+    background-color: #8BC34A; 
+    border: 1px solid #8BC34A; 
+    border-radius: 4px;
+    color: #FFFFFF; 
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav:hover {
+    background-color: #6FAE3A; 
+}
+
+img {
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border: 3px solid #8BC34A;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.prediction-box {
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    border: 2px solid #8BC34A; 
+    background: #2C2C2C; 
+    font-family: cursive;
+    font-size: 20px;
+    color: #8BC34A; 
+    text-align: center;
+    font-weight: bold;
+}
